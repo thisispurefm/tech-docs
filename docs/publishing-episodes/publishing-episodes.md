@@ -18,4 +18,4 @@ To get started, you will need:
 4. Have the `episodeuploader` login to Acast.
 
 {: .important}
-> If this is the first episode of a show which is being published, then you will need to create a show on both Acast and our website; you will then be able to publish the episode of that show.
+If this is the first episode of a show which is being published, then you will need to create a show on both Acast and our website; you will then be able to publish the episode of that show.
