@@ -20,7 +20,7 @@ gh_edit_link_text: "Edit this page on GitHub"
 gh_edit_repository: "https://github.com/thisispurefm/tech-docs"
 
 # callouts
-callouts_level: quiet # or loud
+callouts_level: loud # or loud
 callouts:
   highlight:
     color: yellow
