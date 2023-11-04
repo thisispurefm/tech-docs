@@ -10,4 +10,4 @@ nav_order: 100
 Information for the tech team to do tech things
 
 {: .warning}
-Here be dragons! :fire: :dragon:
+Here be dragons! 🔥🐲

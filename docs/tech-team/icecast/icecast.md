@@ -8,4 +8,4 @@ nav_order: 1
 
 # Icecast2
 
-We use Icecast both for streaming from OBs into the studio, as well as from the studio to the wider Internet. (It's quite important)
+We intend to use Icecast both for streaming from OBs into the studio, as well as from the studio to the wider Internet. (It's quite important)
