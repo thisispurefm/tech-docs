@@ -46,12 +46,12 @@ GROUPID=root
 
 2. Then within the main configuration file (`/etc/icecast2/icecast.xml`) uncomment the `changeowner` block within the *Security* section (usually at the bottom of the file) and set it as following
 
-```xml{% raw %}
+```xml
 <changeowner>
   <user>icecast2</user>
   <group>icecast</user>
 </changeowner>
-{% endraw %}```
+```
 
 3. Set the location of your server, usually to the country the radio station is based in
 4. Change the email address of the admin user from `icecast@localhost` to the email you would like people (such as Ofcom) to contact
@@ -64,7 +64,7 @@ Passwords are stored as plaintext! Make sure only authorised users have access t
 7. Change the hostname to be the domain name you will point to the server (This is a great time to setup DNS records as well!)
 8. Add a `listen-socket` block as below. The port can be anything you would like, but if you are going to use SSL with port 80 and 443, the HTTP port must be first. If using SSL, also add the second `listen-socket` block.
 
-```xml{% raw %}
+```xml
 <listen-socket>
   <port>80</port>
 </listen-socket>
@@ -73,11 +73,11 @@ Passwords are stored as plaintext! Make sure only authorised users have access t
   <port>443</port>
   <ssl>1</ssl>
 </listen-socket>
-{% endraw %}```
+```
 
 9. Now setup the mount points you would like to host on your server. You can have as many as you like, as long as it's <= the sources limit set earlier. It is recommended to have 2 mount points, one each for the main and backup stream. There are more settings available in the [Official Documentation](https://icecast.org/docs/icecast-2.4.1/config-file.html#mountsettings)
 
-```xml{% raw %}
+```xml
 <mount type="normal">
   <mount-name>/stream.mp3</mount-name> <!-- The path of the stream, this would result in [domain]/stream.mp3 -->
   <username>source</username> <!-- Can be anything you like, but some older source clients may not support chaning username from the default (cough cough pos-send) -->
@@ -92,14 +92,14 @@ Passwords are stored as plaintext! Make sure only authorised users have access t
   <stream-url>https://thisispurefm.com</stream-url> <!-- Website which will display on Yellowpages-style websites -->
   <genre>Pop</genre> <!-- Genre which will display on Yellowpages-style websites -->
 </mount>
-{% endraw %}```
+```
 
 10. In the *Paths* section, make a note of the webroot path, as this is needed when obtaining an SSL certificate
 11. If installing an SSL certificate, uncomment and change the `ssl-certificate` line as follows
 
-```xml{% raw %}
+```xml
 <ssl-certificate>/etc/icecast2/bundle.pem</ssl-certificate>
-{% endraw %}```
+```
 
 12. Restart the Icecast2 server to apply the configuration with `sudo systemctl restart icecast2` and check the status using `sudo systemctl status icecast2` to check for errors. If you get an error about SSL certificates, and are configuring for SSL, you can safely ignore it until the third part is complete
 
