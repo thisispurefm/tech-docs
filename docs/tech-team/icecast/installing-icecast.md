@@ -41,7 +41,7 @@ USERID=root
 GROUPID=root
 ```
 2. Then within the main configuration file (`/etc/icecast2/icecast.xml`) uncomment the `changeowner` block within the *Security* section (usually at the bottom of the file) and set it as following
-```
+```xml{% raw %}
 <changeowner>
   <user>icecast2</user>
   <group>icecast</user>
