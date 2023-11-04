@@ -30,7 +30,7 @@ This guide has been written working on a Windows machine, and using a Debian 10 
 ## Part 2: Configuring Icecast2
 
 - This section depends heavily upon the specific configuration you want for Icecast, so is written with the needs of PureFM in mind.
-1. If you wish to use Icecast2 with SSL on port 80 & 443, it must have sufficient permissions to access said ports. In the file `/etc/default/icecast2`, change the lines
+- If you wish to use Icecast2 with SSL on port 80 & 443, it must have sufficient permissions to access said ports. In the file `/etc/default/icecast2`, change the lines
 
 ```
 USERID=icecast2
@@ -44,7 +44,7 @@ USERID=root
 GROUPID=root
 ```
 
-2. Then within the main configuration file (`/etc/icecast2/icecast.xml`) uncomment the `changeowner` block within the *Security* section (usually at the bottom of the file) and set it as following
+- Then within the main configuration file (`/etc/icecast2/icecast.xml`) uncomment the `changeowner` block within the *Security* section (usually at the bottom of the file) and set it as following
 
 ```xml
 <changeowner>
@@ -53,16 +53,16 @@ GROUPID=root
 </changeowner>
 ```
 
-3. Set the location of your server, usually to the country the radio station is based in
-4. Change the email address of the admin user from `icecast@localhost` to the email you would like people (such as Ofcom) to contact
-5. In the *Limits* section, change the maximum number of clients (usually 2 * max listeners) and sources (typically 2 for a main and backup source)
-6. In the *Authentication* section, change all of the passwords, but leave the admin username as `admin`.
+- Set the location of your server, usually to the country the radio station is based in
+- Change the email address of the admin user from `icecast@localhost` to the email you would like people (such as Ofcom) to contact
+- In the *Limits* section, change the maximum number of clients (usually 2 * max listeners) and sources (typically 2 for a main and backup source)
+- In the *Authentication* section, change all of the passwords, but leave the admin username as `admin`.
 
 {: .warning}
 Passwords are stored as plaintext! Make sure only authorised users have access to the server over SSH!
 
-7. Change the hostname to be the domain name you will point to the server (This is a great time to setup DNS records as well!)
-8. Add a `listen-socket` block as below. The port can be anything you would like, but if you are going to use SSL with port 80 and 443, the HTTP port must be first. If using SSL, also add the second `listen-socket` block.
+- Change the hostname to be the domain name you will point to the server (This is a great time to setup DNS records as well!)
+- Add a `listen-socket` block as below. The port can be anything you would like, but if you are going to use SSL with port 80 and 443, the HTTP port must be first. If using SSL, also add the second `listen-socket` block.
 
 ```xml
 <listen-socket>
@@ -75,7 +75,7 @@ Passwords are stored as plaintext! Make sure only authorised users have access t
 </listen-socket>
 ```
 
-9. Now setup the mount points you would like to host on your server. You can have as many as you like, as long as it's <= the sources limit set earlier. It is recommended to have 2 mount points, one each for the main and backup stream. There are more settings available in the [Official Documentation](https://icecast.org/docs/icecast-2.4.1/config-file.html#mountsettings)
+- Now setup the mount points you would like to host on your server. You can have as many as you like, as long as it's <= the sources limit set earlier. It is recommended to have 2 mount points, one each for the main and backup stream. There are more settings available in the [Official Documentation](https://icecast.org/docs/icecast-2.4.1/config-file.html#mountsettings)
 
 ```xml
 <mount type="normal">
@@ -94,15 +94,16 @@ Passwords are stored as plaintext! Make sure only authorised users have access t
 </mount>
 ```
 
-10. In the *Paths* section, make a note of the webroot path, as this is needed when obtaining an SSL certificate
-11. If installing an SSL certificate, uncomment and change the `ssl-certificate` line as follows
+- In the *Paths* section, make a note of the webroot path, as this is needed when obtaining an SSL certificate
+- If installing an SSL certificate, uncomment and change the `ssl-certificate` line as follows
 
 ```xml
 <ssl-certificate>/etc/icecast2/bundle.pem</ssl-certificate>
 ```
 
-12. Restart the Icecast2 server to apply the configuration with `sudo systemctl restart icecast2` and check the status using `sudo systemctl status icecast2` to check for errors. If you get an error about SSL certificates, and are configuring for SSL, you can safely ignore it until the third part is complete
+- Restart the Icecast2 server to apply the configuration with `sudo systemctl restart icecast2` and check the status using `sudo systemctl status icecast2` to check for errors. If you get an error about SSL certificates, and are configuring for SSL, you can safely ignore it until the third part is complete
 
+{: .note}
 If you're not configuring for SSL, congrats! You're finished!
 
 ## Part 3: Configuring Certbot and Installing an SSL Certificate
@@ -120,8 +121,10 @@ For this section, you will need certbot installed, and know both the path to the
 post_hook = cat /etc/letsencrypt/live/[domain]/fullchain.pem /etc/letsencrypt/live/[domain]/privkey.pem > /etc/icecast2/bundle.pem && systemctl restart icecast2
 ```
 
-7. Dry-run the certbot renewal process using `sudo certbot renew --dry-run`. This will test the renewal process, and write the new certificate into the correct file for icecast to read.
+{: .highlight}
+Dry-run the certbot renewal process using `sudo certbot renew --dry-run`. This will test the renewal process, and write the new certificate into the correct file for icecast to read.
 
+{: .note}
 If everything went well, congrats! You've now setup an Icecast2 server and installed an SSL certificate
 
 ## Part 4: Firewall
