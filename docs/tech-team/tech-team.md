@@ -10,4 +10,7 @@ nav_order: 100
 Information for the tech team to do tech things
 
 {: .warning}
-Here be dragons! 🔥🐲
+Here be dragons! 🔥🐲 [^1]
+
+----
+[^1]: Dragons = danger. Don't go here unless you like a bit of ✨ spice ✨ in your life.
