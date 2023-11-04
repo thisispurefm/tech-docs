@@ -31,22 +31,28 @@ This guide has been written working on a Windows machine, and using a Debian 10 
 
 - This section depends heavily upon the specific configuration you want for Icecast, so is written with the needs of PureFM in mind.
 1. If you wish to use Icecast2 with SSL on port 80 & 443, it must have sufficient permissions to access said ports. In the file `/etc/default/icecast2`, change the lines
+
 ```
 USERID=icecast2
 GROUPID=icecast
 ```
+
 to
+
 ```
 USERID=root
 GROUPID=root
 ```
+
 2. Then within the main configuration file (`/etc/icecast2/icecast.xml`) uncomment the `changeowner` block within the *Security* section (usually at the bottom of the file) and set it as following
+
 ```xml{% raw %}
 <changeowner>
   <user>icecast2</user>
   <group>icecast</user>
 </changeowner>
 {% endraw %}```
+
 3. Set the location of your server, usually to the country the radio station is based in
 4. Change the email address of the admin user from `icecast@localhost` to the email you would like people (such as Ofcom) to contact
 5. In the *Limits* section, change the maximum number of clients (usually 2 * max listeners) and sources (typically 2 for a main and backup source)
@@ -57,6 +63,7 @@ Passwords are stored as plaintext! Make sure only authorised users have access t
 
 7. Change the hostname to be the domain name you will point to the server (This is a great time to setup DNS records as well!)
 8. Add a `listen-socket` block as below. The port can be anything you would like, but if you are going to use SSL with port 80 and 443, the HTTP port must be first. If using SSL, also add the second `listen-socket` block.
+
 ```xml{% raw %}
 <listen-socket>
   <port>80</port>
@@ -67,11 +74,13 @@ Passwords are stored as plaintext! Make sure only authorised users have access t
   <ssl>1</ssl>
 </listen-socket>
 {% endraw %}```
+
 9. Now setup the mount points you would like to host on your server. You can have as many as you like, as long as it's <= the sources limit set earlier. It is recommended to have 2 mount points, one each for the main and backup stream. There are more settings available in the [Official Documentation](https://icecast.org/docs/icecast-2.4.1/config-file.html#mountsettings)
+
 ```xml{% raw %}
 <mount type="normal">
   <mount-name>/stream.mp3</mount-name> <!-- The path of the stream, this would result in [domain]/stream.mp3 -->
-  <username>source</username> <!-- Can be anything you like, but some older source clients may not support chaning username from the default (cough cough ps-send) -->
+  <username>source</username> <!-- Can be anything you like, but some older source clients may not support chaning username from the default (cough cough pos-send) -->
   <password>thisisn0tarealp@ssword!</password> <!-- The password needed to stream to this mount point. Once again, plaintext! -->
   <max-listeners>100</max-listeners> <!-- Self explanitory -->
   <fallback-mount>/backup.mp3</fallback-mount> <!-- The mount-name of a secondary mount to be used if the primary is full or offline -->
@@ -84,11 +93,14 @@ Passwords are stored as plaintext! Make sure only authorised users have access t
   <genre>Pop</genre> <!-- Genre which will display on Yellowpages-style websites -->
 </mount>
 {% endraw %}```
+
 10. In the *Paths* section, make a note of the webroot path, as this is needed when obtaining an SSL certificate
 11. If installing an SSL certificate, uncomment and change the `ssl-certificate` line as follows
+
 ```xml{% raw %}
 <ssl-certificate>/etc/icecast2/bundle.pem</ssl-certificate>
 {% endraw %}```
+
 12. Restart the Icecast2 server to apply the configuration with `sudo systemctl restart icecast2` and check the status using `sudo systemctl status icecast2` to check for errors. If you get an error about SSL certificates, and are configuring for SSL, you can safely ignore it until the third part is complete
 
 If you're not configuring for SSL, congrats! You're finished!
@@ -103,9 +115,11 @@ For this section, you will need certbot installed, and know both the path to the
 4. Use the `touch` command to create the certificate file, `sudo touch /etc/icecast2/bundle.pem`
 5. Change the owner of the certificate file to the icecast user, using `sudo chown icecast2 /etc/icecast2/bundle.pem`
 6. Configure certbot so that it automatically writes the certificate to the correct location when automatically renewing. In the `/etc/letsencrypt/renewal/[domain].conf` file (e.g. `/etc/letsencrypt/renewal/icecast.thisispurefm.com.conf`), add the following line in the *\[renewalparams\]* section
+
 ```
 post_hook = cat /etc/letsencrypt/live/[domain]/fullchain.pem /etc/letsencrypt/live/[domain]/privkey.pem > /etc/icecast2/bundle.pem && systemctl restart icecast2
 ```
+
 7. Dry-run the certbot renewal process using `sudo certbot renew --dry-run`. This will test the renewal process, and write the new certificate into the correct file for icecast to read.
 
 If everything went well, congrats! You've now setup an Icecast2 server and installed an SSL certificate
