@@ -2,6 +2,7 @@
 layout: default
 title: Installing Icecast
 parent: Icecast
+grand_parent: Tech Team
 nav_order: 2
 ---
 
