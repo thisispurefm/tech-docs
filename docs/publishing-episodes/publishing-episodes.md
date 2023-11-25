@@ -2,7 +2,7 @@
 layout: default
 title: Publishing Episodes
 has_children: true
-nav_order: 3
+nav_order: 6
 ---
 
 # Publishing Episodes
