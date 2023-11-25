@@ -41,5 +41,5 @@ This guide will take you through how to create a new user account on Active Dire
 ![Adding user to groups](../../../assets/tech-team/new-ad-account/ad-user-properties-add-to-group.png)
 14. Click 'Apply' then 'OK'. 
 
-{:. Note}
+{: .note}
 Congratulations! You've successfully created a user in Active Directory. You can now close the Active Directory users and Computers software and log out of the server. DO NOT SHUT DOWN THE SERVER WITHOUT EXPLICIT PERMISSION FROM THE TECHNICAL DIRECTOR. 
