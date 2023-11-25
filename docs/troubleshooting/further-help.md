@@ -8,7 +8,7 @@ parent: Troubleshooting
 # Getting Further Help
 If you've tried all the troubleshooting steps, and are still having issues, let us know!  
 To log a tech support request, simply fill out the Google Form linked below  
-[https://forms.gle/hdGAdNpVqPJGjbQ98](https://forms.gle/hdGAdNpVqPJGjbQ98){: .btn } 
+[Tech Support Request Form](https://forms.gle/hdGAdNpVqPJGjbQ98){: .btn } 
   
 This form will automatically send us an email, and give us your email address so we can respond as soon as possible  
   
