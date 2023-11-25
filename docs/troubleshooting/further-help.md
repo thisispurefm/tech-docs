@@ -2,11 +2,10 @@
 layout: default
 title: Further Help
 nav_order: 100
-parent: Home
+parent: Troubleshooting
 ---
 
 # Getting Further Help
-
 If you've tried all the troubleshooting steps, and are still having issues, let us know!  
 To log a tech support request, simply fill out the Google Form linked below  
 [https://forms.gle/hdGAdNpVqPJGjbQ98](https://forms.gle/hdGAdNpVqPJGjbQ98)  
