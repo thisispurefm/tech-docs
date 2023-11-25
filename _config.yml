@@ -4,7 +4,7 @@ remote_theme: just-the-docs/just-the-docs
 
 url: https://tech-docs.thisispurefm.com/
 
-color_scheme: purefm
+color_scheme: dark
 
 # site logo
 logo: "/assets/site-logo.png"
