@@ -1,12 +1,12 @@
 ---
 layout: default
-title: New Windows Account (through Active Directory)
-parent: Windows
+title: New User Account
+parent: Active Directory
 grand_parent: Tech Team
 nav_order: 1
 ---
 
-# New Windows Account (through Active Directory)
+# New User Account
 
 This guide will take you through how to create a new user account on Active Directory('AD').
 

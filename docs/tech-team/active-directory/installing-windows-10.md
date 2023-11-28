@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Installing Windows 10
-parent: Windows
+title: Installing Windows 10 & Domain Joining
+parent: Active Directory
 grand_parent: Tech Team
 nav_order: 1
 ---
 
-# Installing Windows 10
+# Installing Windows 10 & Domain Joining a PC
 
 We are sticking with Windows 10 for the time being, as it has all of the features of Windows 11 but with lower hardware requirements and better stability.
 
