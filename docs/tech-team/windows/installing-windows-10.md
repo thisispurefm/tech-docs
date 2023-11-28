@@ -1,14 +1,12 @@
 ---
 layout: default
-title: Installing Windows 10 & Domain Joining
-parent: Active Directory
+title: Installing Windows 10
+parent: Windows
 grand_parent: Tech Team
 nav_order: 1
 ---
 
-# Installing Windows 10 & Domain Joining a PC
-
-We are sticking with Windows 10 for the time being, as it has all of the features of Windows 11 but with lower hardware requirements and better stability.
+# Installing Windows 10
 
 ## Requirements
 
@@ -65,30 +63,4 @@ Once the computer restarts, it's time to configure Windows and setup the puretec
 13. If prompted to "Let Cortana help you get things done", press "Not Now"
 
 {: .note}
-If everything was successful, Windows should take a few minutes to "Get everything ready for you" before dropping you to the desktop. You can now move on to Part 3: Joining Active Directory
-
-## Part 3: Joining Active Directory
-
-{: .note}
-Check once again that the computer is connected to the PureNET network before proceeding
-
-1. Open the old-school Control Panel by searching for it in the Start Menu
-2. Click on the "System and Security" section  
-![Control panel home](../../../assets/tech-team/windows/system-and-security.png)
-3. Under the "System" heading, click on "Allow remote access"  
-![Control panel system and security](../../../assets/tech-team/windows/allow-remote-access.png)
-4. In the "System Properties" window, move to the "Computer Name" tab  
-![System properties window](../../../assets/tech-team/windows/computer-name-tab.png)
-5. Click on the "Change" button  
-![Computer name tab](../../../assets/tech-team/windows/change-computer-name.png)
-6. Change the "Computer Name" field to one of the following: For a studio PC, give it the name `PURE-SX-YY` where X is the studio and YY is the number of the computer, with a leading zero. For an OB PC, give it the name `PURE-OB-XX` where XX is the number of the computer with a leading zero  
-![Computer name window](../../../assets/tech-team/windows/set-computer-name.png)
-7. Change from "Member of Workgroup" to "Member of Domain", and in the Domain box, put `purefm.xyz`  
-![Computer name window](../../../assets/tech-team/windows/domain-join.png)
-8. When prompted for a username and password, enter either your Domain Super Admin account, or contact the Technical Director for assistance
-9. Once authenticated, it may take a second to join the domain, and then a window saying "Welcome to the purefm.xyz domain"  
-![Welcome window](../../../assets/tech-team/windows/welcome-to-domain.png)
-10. Click "OK" on this window and reboot the computer
-
-{: .note}
-The computer should now be fully setup and connected to the domain. When the computer has restarted, try logging in with your account. It may take a while for the first log in. If it doesn't work, contact the Technical Director
+If everything was successful, Windows should take a few minutes to "Get everything ready for you" before dropping you to the desktop. You can now move on to [Joining Active Directory](../active-directory/domain-join)
