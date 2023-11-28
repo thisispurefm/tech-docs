@@ -3,6 +3,7 @@ title: Home
 layout: home
 nav_order: 1
 has_children: true
+has_toc: false
 ---
 
 # Welcome to the PureFM Technical Documentation!
