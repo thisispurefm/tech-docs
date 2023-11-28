@@ -16,3 +16,8 @@ The group a user belongs to will depend on their role in PureFM. See the table b
 |:---|:---|:---|
 | `Domain Users` | Builtin | All accounts which users actively use |
 | `Domain Administrators` | Builtin | Top level administrators. *Should only be given to competent people as this imposes no restrictions*. Should only ever be assigned to admin specific accounts |
+| `GP-TECHTEAM` | Custom | Tech Team members (standard accounts) |
+| `GP-MUSICTEAM` | Custom | All music team members |
+| `GP-MUSICTEAMPLUS` | Custom | Senior Music Team members (provides edit access on Music drive) |
+| `GP-COMMITTEE` | Custom | All committee members |
+| `GP-COMMITTEEPLUS` | Custom | Senior committee members (provides access to all sensitive files) |
