@@ -34,7 +34,7 @@ This list is up to date as at 2023-11-28. The most up to date list will always b
 | `Q` | `blackbox` | A blackbox of all live broadcast content | M `GP-COMMITTEEPLUS` |
 | `O` | `committee` | Committee Storage | M `GP-COMMITTEE` |
 | `H` | `home` | All users shared storage | M `Domain Users` |
-| `M` | `music` | Current Music Library | M `GP-MUSICTEAMPLUS` R `Domain Users` |
+| `M` | `music` | Current Music Library | M `GP-MUSICTEAMPLUS` <br> R `Domain Users` |
 | `N` | `music-archive` | Non-Current Music Library | M `GP-MUSICTEAM` |
 | `T` | `tech` | Tech team storage | M `GP-TECHTEAM` |
 
