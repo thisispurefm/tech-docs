@@ -35,9 +35,14 @@ This list is up to date as at 2023-11-28. The most up to date list will always b
 | `O` | `committee` | Committee Storage | M `GP-COMMITTEE` |
 | `H` | `home` | All users shared storage | M `Domain Users` |
 | `M` | `music` | Current Music Library | M `GP-MUSICTEAMPLUS` <br> R `Domain Users` |
-| `N` | `music-archive` | Non-Current Music Library | M `GP-MUSICTEAM` |
+| `N` | `music-archive` | Non-Current Music Library | M `GP-MUSICTEAM` <br> M `GP-MUSICTEAMPLUS` |
 | `T` | `tech` | Tech team storage | M `GP-TECHTEAM` |
+| `V` or `U` | `user` | User personal storage | See below |
 
 The `Domain Admins` group has `F` access to all shares.  
 
-User individual storage, once working, will be mapped to `U`. 
+## User Personal Storage
+Users have a folder setup in the `user` share which is their personal networked storage. This folder is created manually when the user is created, naming it their username.  
+All domain users have Traverse access to the share, with individual users being assigned Modify access to their folder.  
+As usual, Domain Admins have Full Control over the share and the share maps for Domain Admins using the letter `V` (as to not conflict with their own user drive).  
+User individual storage maps to the letter `U`, and folder redirection is setup for Documents, Downloads, Photos, Videos and Desktop to point to the root directory of the users' individual folder. 
