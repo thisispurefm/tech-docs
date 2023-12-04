@@ -21,14 +21,16 @@ A guide on how to record an episode using the equipment in Studio 2
 2. Turn on the monitor, using the plug shown below  
 ![Studio 2 desk with plug for monitor highlighted](../../assets/studio-2/recording-an-episode/studio-2.jpg)
 3. Log in to the computer with your PureFM credentials
-4. Open file explorer and create a folder inside the "Recordings" folder in the home drive, `H:\Recordings`, with the name of your show, if it does not already exist  
-![File explorer window showing the home share, with a folder for "Testy Mc Testface's Show"](../../assets/studio-2/recording-an-episode/file-explorer-recording-folder.png)
-5. Within your show's folder, create another folder with the episode number, date or another useful name  
-![File explorer window showing the Episode 1 folder of the show](../../assets/studio-2/recording-an-episode/file-explorer-episode-folder.png)
-6. Position the microphones so they are roughly a closed fists length away from your mouth and in a comfortable position for you to sit
-7. Move the `PRES` (Presenter Microphone), `GUES` (Guest Microphone) and `MAIN` faders on the desk so they are within the shaded range, next to the U, as shown below  
+4. Open file explorer and open your `U:\` drive, the name of it should be the same as your username.
+![File Explorer with U drive highlighted](../../assets/studio-2/recording-an-episode/file-explorer.png)
+5. Within your `U` drive, open the Documents folder and make a folder in there called `Recordings`, if it doesn't already exist.
+![Recording folder in U drive](../../assets/studio-2/recording-an-episode/file-explorer-recordings-folder.png)
+1. Within your Recordings folder, create another folder with the episode number, date or another useful name  
+![File explorer window showing the Episode 1 folder of the show](../../assets/studio-2/recording-an-episode/file-explorer-show-folder.png)
+1. Position the microphones so they are roughly a closed fists length away from your mouth and in a comfortable position for you to sit
+2. Move the `PRES` (Presenter Microphone), `GUES` (Guest Microphone) and `MAIN` faders on the desk so they are within the shaded range, next to the U, as shown below  
 ![Faders moved to the shaded range](../../assets/studio-2/recording-an-episode/desk-faders.jpg)
-8. Put the headphones on, and speak into the microphone. If the `MAIN METERS` LEDs reach into the yellow or red range, move the presenter fader down slightly. Repeat this process with the guest microphone and fader
+1. Put the headphones on, and speak into the microphone. If the `MAIN METERS` LEDs reach into the yellow or red range, move the presenter fader down slightly. Repeat this process with the guest microphone and fader
 
 {: .note}
 If the volume of the live monitor in the headphones is too loud, reduce the volume of the `PHONES` dial, **not** the microphone faders
@@ -85,7 +87,7 @@ The files you've saved so far should be in the `.aup3` format, which can only be
 1. In the "File" menu in Audacity, open the "Export Audio" window  
 ![Audacity with file menu open](../../assets/studio-2/recording-an-episode/audacity-export-button.png)
 2. Set the Folder to the episode folder you created earlier
-3. Change the file name to whatever you want, as long as it ends with `.mp3`  
+3. Change the file name to whatever you want, as long as it ends with `.mp3`. The filepath to the folder will look a little strange, as long as it starts with `\\truenas\user\YOUR_USER_NAME\` you'll be fine  
 ![Audacity export window](../../assets/studio-2/recording-an-episode/audacity-export-screen.png)
 4. Make sure the other settings match the image below, and then press the "Export" button in the bottom-right  
 ![Audacity export window](../../assets/studio-2/recording-an-episode/audacity-export-screen-settings.png)
