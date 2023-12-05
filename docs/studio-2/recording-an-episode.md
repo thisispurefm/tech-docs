@@ -25,7 +25,7 @@ A guide on how to record an episode using the equipment in Studio 2
 ![File Explorer with U drive highlighted](../../assets/studio-2/recording-an-episode/file-explorer.png)
 5. Within your `U` drive, open the Documents folder and make a folder in there called `Recordings`, if it doesn't already exist.
 ![Recording folder in U drive](../../assets/studio-2/recording-an-episode/file-explorer-recordings-folder.png)
-1. Within your Recordings folder, create another folder with the episode number, date or another useful name  
+1. Within your Recordings folder, create another folder with the show title, episode number and date -  for example: `My Show - Ep1 - 2023-12-05`. 
 ![File explorer window showing the Episode 1 folder of the show](../../assets/studio-2/recording-an-episode/file-explorer-show-folder.png)
 1. Position the microphones so they are roughly a closed fists length away from your mouth and in a comfortable position for you to sit
 2. Move the `PRES` (Presenter Microphone), `GUES` (Guest Microphone) and `MAIN` faders on the desk so they are within the shaded range, next to the U, as shown below  
