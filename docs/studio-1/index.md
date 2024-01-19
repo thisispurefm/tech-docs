@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Studio 1
-has_children: false
+has_children: true
 has_toc: false
 nav_order: 3
 ---
