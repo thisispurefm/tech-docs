@@ -33,27 +33,3 @@ On the far right hand side of the desk, the final two strips, are used for monit
 ![Studio 1 Desk Monitoring Output](../../assets/studio-1/monitor-output.jpg)
 
 The top left knob is the feed which runs to the Headphone Amplifier used for the Co-Presenter and Guest Headphones; the top right knob controls the monitor speakers in the studio; and the bottom right knob controls the presenter headphones. Use these knobs to control how much sound you want the relevant device to make. Generally speaking - none of the knobs should be turned up more than 9-O'Clock. Note that when a microphone channel is open, the speakers will automatically cut out - this is to ensure that there is no audio leak from the microphone into the speakers which will cause feedback. 
-
-
-
-## Headphone Amp
-used for guests
-use channel 1 and 4
-shouldn't need to touch it that much - photo shows how to setup
-
-## rack
-in the corner
-don't touch on pain of death
-use bars on wholer to determine what is going on with audio levels. they should just about enter the orange section at peak.
-
-## Microphones
-placement the same as in s2 docs
-
-
-
-## Detailed PlayIt Options
-PlayIt Live comes with lots of options.
-
-### Track Segues
-image in screenshots of go and stop types
-image in screenshots segue editor
