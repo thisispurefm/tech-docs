@@ -27,7 +27,10 @@ The other channels on the left hand side of the desk are unused. They are not co
 
 ## Right Desk
 ![Studio 1 Right Sound Desk](../../assets/studio-1/right-sound-desk.jpg)
-The right hand side of the sound desk is used for stereo audio inputs - this currently is PlayIt Live and the Emergency Tape. In the future - a input from Studio 2 will be added. The Trim knob for the emergency tape should be turned all the way to the max, this means it's turned to close to 5-O'Clock. This is due to ongoing issues with the signal. 
+The right hand side of the sound desk is used for stereo audio inputs - this currently is PlayIt Live and the Emergency Tape. In the future - a input from Studio 2 will be added.
+
+{: .new}
+The issue with the Emergency Tape volume has been fixed. Do not turn the *Trim* knob beyond 12 O'Clock. 
 
 On the far right hand side of the desk, the final two strips, are used for monitor outputs - these four knobs, as seen below, control different monitoring outputs from the desk.
 ![Studio 1 Desk Monitoring Output](../../assets/studio-1/monitor-output.jpg)
