@@ -29,6 +29,11 @@ The Zoom H4N also supports external devices being connected to it. This enables 
 ### Audio Interface
 The Zoom H4N is also able to be used as an Audio Interface, thus enabling the output from it to be piped into a laptop which can either be recorded through the laptop / streamed back to the studio as part of a live OB. This service requires consultation with the Technical Director due to the complex nature of an OB. 
 
+## General Guidance Notes
+- Do NOT remove the SD Card under any circumstances. A cable has been provided to use to retrieve content from the recorder so you do not need to remove the SD Card
+- Do NOT remove the wind muff from the top of the recorder. This has been installed to ensure the best sounding audio possible can be recorded.
+- Do operate the Zoom H4n Pro placed on a Tripod when using it on a table, angling the microphones towards the speaker's mouth.
+
 ## Using The Recorder As A Recorder 
 - Turn on the Zoom H4n Pro using the power switch. This is located on the left hand side of the unit, near the bottom. To operate the power switch - pull down in the direction of the power icon.
 
@@ -65,13 +70,3 @@ For some unknown reason, the SD Card must be formatted in a slightly strange way
 When you return the SD Card to the Zoom H4n Pro, decline it's offer to format the card for you.
 ### Manual
 The manual is available [here](../../assets/outside-broadcasts/zoomh4npromanual.pdf).
-
-## TODO
-* Use of the recorder for recording directly
-* Getting content off of it
-* Using it with external microphones (incl phantom power)
-* Using it as an audio interface (incl subsec on how to do external microphones)
-* Tech Notes
-  * Formatting the SD card
-  * It's manual if possible
-* Photos
