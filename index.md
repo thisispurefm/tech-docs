@@ -8,7 +8,7 @@ has_toc: false
 
 # Welcome to the PureFM Technical Documentation!
 
-Here you will find all the deets on how to use both studios, the big OB kit and the lil OB bag too... eventually. There will also be docs on how our network and infrastructure is configured - just no passwords or sensitive information :)
+Here you will find the documentation of how PureFM works. It is a work in progress and content will be added slowly over time. It currently has enough information for you to be able to use Studios 1 and 2, as well as some of the technical team's information on how the tech works. 
 
 If you've stumbled across this and are looking for PureFM's public facing website the head over to [thisispurefm.com](https://thisispurefm.com)
 
