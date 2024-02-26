@@ -35,7 +35,7 @@ press the power button
 
 {: .warning}
 > You **MUST** wait for Paul to have fully booted before moving on to Studio 1, as there is a known issue with the PCs
-> failing to map their network drives causing issues
+> failing to map their network drives
 
 ## Studio 1
 
@@ -61,5 +61,5 @@ press the power button
 position)
 1. Listen to the web player to check that the stream is working
 
-{: .information}
+{: .note }
 > You have successfully brought PureFM from being completely offline to fully on-air. Give yourself a pat on the back 🙂
