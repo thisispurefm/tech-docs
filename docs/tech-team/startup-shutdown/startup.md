@@ -61,5 +61,5 @@ press the power button
 position)
 1. Listen to the web player to check that the stream is working
 
-{: .note }
+{: .note}
 > You have successfully brought PureFM from being completely offline to fully on-air. Give yourself a pat on the back 🙂
