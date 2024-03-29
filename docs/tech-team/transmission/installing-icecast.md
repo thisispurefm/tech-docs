@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Installing Icecast
-parent: Icecast
+parent: Transmission
 grand_parent: Tech Team
-nav_order: 1
+nav_order: 11
 ---
 
 # Installing Icecast
