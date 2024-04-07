@@ -107,8 +107,8 @@ Below is a list of all of the computers running on PureNet, including informatio
 ### Annie Mac
 
 - Paul O'Grady
-  - 8 Cores
-  - 16GB RAM
+  - 16 Cores
+  - 32GB RAM
   - 32GB Boot
   - 8x 900GB HDD (SAS HBA Passed through)
 - TrueNAS Core 13

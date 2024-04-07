@@ -8,7 +8,7 @@ nav_order: 11
 
 # Installing Icecast
 
-We are planning to use Icecast (specifically version 2) as our distribution server. This move is planned as the current distribution server (a VPS hosted and managed by `streamuphosting.co.uk`) is very limited and not cost-effective (400 max listeners, 128kbps max bitrate). There is official documentation available for Icecast2 at [`icecast.org/docs/`](https://icecast.org/docs/) but they are very obtuse and hard to use.
+We are planning to use Icecast (specifically version 2) as our distribution server. This move is planned as the current distribution server (a VPS hosted and managed by `streamuphosting.co.uk`) is very limited and not cost-effective (400 max listeners, 128kbps max bitrate). There is official documentation available for Icecast2 at [icecast.org/docs/](https://icecast.org/docs/) but they are very obtuse and hard to use.
 
 ## Requirements
 
