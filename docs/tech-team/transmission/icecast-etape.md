@@ -27,6 +27,7 @@ Since Icecast does not have an actual killswitch, the easiest method of killing 
 - Open the file `/etc/icecast2/icecast.xml` in an editor of your choice (`nano` is installed so probably use that)
 - Edit the following section, and change the password in `<source-password></source-password>`, preferably just add some
  characters before the existing password :), e.g.
+
 ```xml
 <authentication>
     <!-- Sources log in with username 'source' -->
@@ -39,6 +40,7 @@ Since Icecast does not have an actual killswitch, the easiest method of killing 
     <admin-password>thisIsAlsoNotTheActualPassword:D</admin-password>
 </authentication>
 ```
+
 - Save the changes to the file
 - Restart the Icecast 2 server with `sudo systemctl restart icecast2`, then check the status of the service with
  `sudo systemctl status icecast2`
