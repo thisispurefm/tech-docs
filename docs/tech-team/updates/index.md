@@ -23,26 +23,27 @@ This guide will involve shutting down all components of the PureFM network. You 
 
 ## Order to Update
 There is a precise art to doing the order of the Updates. This is listed below:
-1. In the Server Rack - Unmute the Emergency Tape channel on the TX Mixer and Mute the Studio 1 feed
-1. On Claraamfo
+1. In the Server Rack - on the TX Mixer and Mute the Studio 1 feed (all channels should now be muted)
+2. On Claraamfo
     - Stop BUTT from streaming
     - Close Elisa
-1. Unplug the PS Send (`PS.S`) Ethernet from the Patch Panel in the rack to prevent it from streaming
-1. Listen to the stream to confirm that the Emergency Tape is playing. The Emergency Tape should begin whenever you
+3. Unplug the PS Send (`PS.S`) Ethernet from the Patch Panel in the rack to prevent it from streaming
+4. Listen to the stream to confirm that the Emergency Tape is playing. The Emergency Tape should begin whenever you
  refresh the page. 
-1. In Studio 1 - stop PlayIt Live playing on `Pure-S1-01` then shut that PC down. Then shut down `PURE-S1-02` and
+1. In Studio 1 - stop PlayIt Live playing on `PURE-S1-01` then shut that PC down. Then shut down `PURE-S1-02` and
  `PURE-S2-01`. 
 1. Follow the instructions for [Updating claraamfo](claraamfo.html)
-1. Follow the instructions for [Updating jackhayes](jackhayes.html)
-1. Follow the instructions for [Updating the VPS](vps.html)
-1. We're now moving onto updating Virtualised Systems. It's helpful to login to Proxmox to be able to view the Console
+2. Follow the instructions for [Updating jackhayes](jackhayes.html)
+3. Follow the instructions for [Updating nelshylton](nelshylton.html)
+4. Follow the instructions for [Updating the VPS](vps.html)
+5. We're now moving onto updating Virtualised Systems. It's helpful to login to Proxmox to be able to view the Console
  view of our VMs. We're not touching the Console through Proxmox, just looking at it.
 1. Follow the instructions for [Updating jordannorth](jordannorth.html)
-1. Follow the instructions for [Updating anniemac](anniemac.html)
-1. Shutdown jordannorth
-1. Follow the instructions for [Updating paulogrady](paulogrady.html)
-1. Follow the instructions for [Updating craigcharles](craigcharles.html)
-1. Follow the instructions for [Updating the Netgear NAS](netgearnas.html)
-1. We have now updated all the central services, so we can reboot everything. Follow the instructions for 
+2. Follow the instructions for [Updating anniemac](anniemac.html)
+3. Shutdown jordannorth
+4. Follow the instructions for [Updating paulogrady](paulogrady.html)
+5. Follow the instructions for [Updating craigcharles](craigcharles.html)
+6. Follow the instructions for [Updating the Netgear NAS](netgearnas.html)
+7. We have now updated all the central services, so we can reboot everything. Follow the instructions for 
  [Starting Up from Cold](../startup-shutdown/startup.html)
 1. Follow the instructions for [Updating the Studio PCs](studio-pcs.html)
