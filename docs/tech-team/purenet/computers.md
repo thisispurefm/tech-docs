@@ -74,6 +74,15 @@ Below is a list of all of the computers running on PureNet, including informatio
 - OPNSense
 - Static - `10.0.0.1`
 
+### Nels Hylton
+
+- Dell Optiplex 7010 USFF
+  - i3-2120
+  - 4GB DDR3
+  - 900GB HDD
+- LibreTime
+- Static - `10.0.0.106`
+
 ### ReadyNAS
 
 - Netgear ReadyNAS 204
