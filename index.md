@@ -17,6 +17,11 @@ If you've stumbled across this and are looking for PureFM's public facing websit
 > If your issue is **urgent** (ie not solving it will result in Live-To-Air content not working), please contact us on the PureFM WhatsApp Community either through PureFM Chat or PureFM Tech -->
 
 
+{: .new}
+> PureFM Committee is in talks with ExpressFM to bring you the option to use a studio space and Record Podcasts
+> The Tech Team currently do not know how to use ExpressFM's equipment or software so at this moment in time we are not very helpful for any ExpressFM tech queries.
+
+
 {: .warning}
 > The tech team is currently operating at a limited capacity due to the Union's Building Refit.
 
