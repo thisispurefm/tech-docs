@@ -18,7 +18,8 @@ If you've stumbled across this and are looking for PureFM's public facing websit
 
 
 {: .new}
-> PureFM Committee is in talks with ExpressFM to bring you the option to use a studio space and Record Podcasts
+> PureFM Committee is in talks with ExpressFM to bring you the option to use a studio space and Record Podcasts.
+
 > The Tech Team currently do not know how to use ExpressFM's equipment or software so at this moment in time we are not very helpful for any ExpressFM tech queries.
 
 
