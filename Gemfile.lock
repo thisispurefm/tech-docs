@@ -13,6 +13,7 @@ GEM
     ffi (1.17.0-arm64-darwin)
     ffi (1.17.0-x86_64-linux-gnu)
     forwardable-extended (2.6.0)
+<<<<<<< HEAD
     google-protobuf (4.28.1-arm64-darwin)
       bigdecimal
       rake (>= 13)
@@ -21,6 +22,16 @@ GEM
       rake (>= 13)
     http_parser.rb (0.8.0)
     i18n (1.14.6)
+=======
+    google-protobuf (4.28.0-arm64-darwin)
+      bigdecimal
+      rake (>= 13)
+    google-protobuf (4.28.0-x86_64-linux)
+      bigdecimal
+      rake (>= 13)
+    http_parser.rb (0.8.0)
+    i18n (1.14.5)
+>>>>>>> main
       concurrent-ruby (~> 1.0)
     jekyll (4.3.4)
       addressable (~> 2.4)
@@ -46,7 +57,7 @@ GEM
       jekyll (>= 3.8, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
-    just-the-docs (0.8.2)
+    just-the-docs (0.10.0)
       jekyll (>= 3.8.5)
       jekyll-include-cache
       jekyll-seo-tag (>= 2.0)
@@ -68,7 +79,11 @@ GEM
     rb-inotify (0.11.1)
       ffi (~> 1.0)
     rexml (3.3.7)
+<<<<<<< HEAD
     rouge (4.4.0)
+=======
+    rouge (4.3.0)
+>>>>>>> main
     safe_yaml (1.0.5)
     sass-embedded (1.78.0-arm64-darwin)
       google-protobuf (~> 4.27)
@@ -84,8 +99,13 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+<<<<<<< HEAD
   jekyll (~> 4.3.4)
   just-the-docs (= 0.8.2)
+=======
+  jekyll (~> 4.3.3)
+  just-the-docs (= 0.10.0)
+>>>>>>> main
 
 BUNDLED WITH
    2.3.26
